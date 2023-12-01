@@ -2,6 +2,16 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import {FaHtml5, FaCss3Alt} from "react-icons/fa";
+import {SiTailwindcss} from "react-icons/si";
+import {IoLogoJavascript} from "react-icons/io5";
+import {IoLogoFirebase} from "react-icons/io5";
+import {FaReact} from "react-icons/fa6";
+import {TbBrandNextjs} from "react-icons/tb";
+import {SiNpm} from "react-icons/si";
+import {DiNodejs} from "react-icons/di";
+import {DiMongodb} from "react-icons/di";
+
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
@@ -22,10 +32,10 @@ const greeting = {
   username: "Mustafa Zuberi",
   title: "Hi all, I'm Mustafa",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs  and some other cool libraries and frameworks."
+    " A passionate Software Developer 🚀 with experience in building web applications using JavaScript, React.js, Next.js, Firebase, and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1BPBBfT634oDIQUSJXrllEXSMG8722prY/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -39,6 +49,7 @@ const socialMediaLinks = {
   facebook: "https://www.facebook.com/mustafa.zuberi.716",
   // medium: "https://medium.com/@saadpasta",
   stackoverflow: "https://stackoverflow.com/users/20854534/mustafa-zuberi",
+  instagram: "https://www.instagram.com/mustafa.raza.zuberi._/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -53,10 +64,7 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,55 +73,43 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      reactIconsIcon: <FaHtml5 />
     },
     {
       skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      reactIconsIcon: <FaCss3Alt />
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "tailwind",
+      reactIconsIcon: <SiTailwindcss />
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      reactIconsIcon: <IoLogoJavascript />
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      reactIconsIcon: <FaReact />
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "nextjs",
+      reactIconsIcon: <TbBrandNextjs />
     },
     {
       skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      reactIconsIcon: <IoLogoFirebase />
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "nodejs",
+      reactIconsIcon: <DiNodejs />
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "npm",
+      reactIconsIcon: <SiNpm />
+    },
+    {
+      skillName: "mongodb",
+      reactIconsIcon: <DiMongodb />
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -125,23 +121,16 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Education Trust Nasra School",
+      logo: require("./assets/images/nasra school.png"),
+      subHeader: "Matriculation in Computer Science",
+      duration: "September 2008 - April 2020"
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Government Superior Science College",
+      logo: require("./assets/images/superior collge.jpg"),
+      subHeader: "Intermediate in Computer Science",
+      duration: "September 2020 - September 2022"
     }
   ]
 };
@@ -154,10 +143,6 @@ const techStack = {
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
     },
     {
       Stack: "Programming",
@@ -173,29 +158,11 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Web Application Developer (React.js)",
+      company: "Smash Code",
+      companylogo: require("./assets/images/smashcode.png"),
+      date: "March 2023 – August 2023",
+      desc: "I've actively contributed to the development of React Web Applications, spanning CMS panels and a mix of static and dynamic websites, playing a significant role in enhancing their functionality and user appeal."
     }
   ]
 };
@@ -205,35 +172,85 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/M.png"),
+      projectName: "Messenger Clone",
+      projectDesc:
+        "Developed a feature-rich chat app using Next.js, Firebase, TypeScript, and Tailwind CSS designed with Shadcn UI. Implemented seamless authentication, including signup, login, and social logins. Users can engage in diverse conversations with text, voice, and images. The UI, facilitates easy blocking, real-time status tracking, and last seen timestamps. Additionally, users can establish connections by sending and accepting friend requests, enhancing the overall user experience.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://messenger-clone-by-mustafazuberi.vercel.app/auth/signin"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/smidiscountstore.png"),
+      projectName: "SMIT Discount Store",
+      projectDesc:
+        "This web application on React.js allows users to order products and view their orders in the profile section. Users can also update their full name, as well as view the status of their orders (pending, delivered, rejected) in their profile. Admins can add categories, products, and change the status of orders.      ",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://smit-discount-store-mrz.netlify.app/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/darazclone.png"),
+      projectName: "Daraz Clone",
+      projectDesc:
+        "Utilizing the latest technologies such as MongoDB, React.js, Express.js, and Node.js, this platform provides an intuitive and user-friendly interface that simplifies the process of setting up an online store, creating product listings, and managing orders. With Daraz Clone, users can easily create their own virtual store and start selling products in no time.      ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.linkedin.com/feed/update/urn:li:activity:7031321133127806976/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/foodpanda.png"),
+      projectName: "Foodpanda Clone",
+      projectDesc:
+        "This is web-app on React.js ,As a user, you can order food from any restaurant and view your order status in the cart. To place an order, your current location must be accessible. As a restaurant, you can update your restaurant info and add/edit/delete items. You can also view available orders in the cart and accept/reject orders.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://foodpanda-clone-mrzuberi.netlify.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/whatsapp.png"),
+      projectName: "Whatsapp Clone",
+      projectDesc:
+        "Chat App developed using HTML, CSS, JavaScript, and Firebase, creating a WhatsApp-like interface with responsive design, Firebase-based chat functionality, image sending, and Emoji support.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://chatapp-whatsapp-mustafa.netlify.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/turoclone.png"),
+      projectName: "Turo Clone",
+      projectDesc:
+        "I developed this landing page using REACTJS functional components with a responsive design, utilizing UI libraries such as Ant Design and Material UI.This project allowed me to further develop my skills in web design and development.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://turo-mrzuberi-clone.netlify.app/"
         }
       ]
     }
@@ -370,7 +387,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
