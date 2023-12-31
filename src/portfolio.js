@@ -42,7 +42,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/MustafaRazaZuberi",
+  github: "https://github.com/mustafazuberi",
   linkedin: "https://www.linkedin.com/in/mustafa-zuberi-475334231/",
   gmail: "mustafazuberi986@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
@@ -158,11 +158,18 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Web Application Developer (React.js)",
+      role: "Frontend React JS Developer",
       company: "Smash Code",
       companylogo: require("./assets/images/smashcode.png"),
       date: "March 2023 – August 2023",
       desc: "I've actively contributed to the development of React Web Applications, spanning CMS panels and a mix of static and dynamic websites, playing a significant role in enhancing their functionality and user appeal."
+    },
+    {
+      role: "Software Developer (Next.js)",
+      company: "Expertizo",
+      companylogo: require("./assets/images/expertizo.jpg"),
+      date: "December 2023 – Present",
+      desc: "Experienced React developer at Expertizo, specializing in CMS panels and dynamic websites. Proficient in Next.js, TypeScript, and Redux Toolkit, contributing to the advancement of software development projects."
     }
   ]
 };
